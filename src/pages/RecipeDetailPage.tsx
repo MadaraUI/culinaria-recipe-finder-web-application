@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Globe, Tag, PlayCircle } from "lucide-react";
+import { ArrowLeft, Globe, Tag} from "lucide-react";
 import { api, getIngredients } from "../utils/api";
 import { RecipeDetail } from "../utils/types";
 import { FavoriteButton } from "../components/FavoriteButton";
@@ -153,20 +153,6 @@ export function RecipeDetailPage() {
                   ))}
                 </div>
               </div>
-
-              {/* {recipe.strYoutube && (
-                <div className="pt-6 border-t border-stone-200">
-                  <a
-                    href={recipe.strYoutube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 text-red-600 hover:text-red-700 font-medium transition-colors"
-                  >
-                    <PlayCircle size={24} />
-                    <span>Watch Video Tutorial</span>
-                  </a>
-                </div>
-              )} */}
             </div>
           </div>
         </div>
