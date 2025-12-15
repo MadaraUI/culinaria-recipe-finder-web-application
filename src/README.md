@@ -128,7 +128,7 @@ Home cooks and food enthusiasts seeking culinary inspiration. Users who value:
 
    ```bash
    git clone https://github.com/MadaraUI/culinaria-recipe-finder-web-application.git
-   cd culinaria
+   cd culinaria-recipe-finder-web-application
    ```
 
 2. **Install dependencies**
