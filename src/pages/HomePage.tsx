@@ -150,7 +150,7 @@ export function HomePage() {
       {/* Categories Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-18 mt-8">
         <div className="flex justify-between items-end mb-8">
-          <h2 className="font-display text-3xl font-bold text-charcoal">
+          <h2 className="font-display md:lg:text-3xl text-xl font-bold text-charcoal">
             Explore Categories
           </h2>
           <button
@@ -199,12 +199,12 @@ export function HomePage() {
       {/* Featured Recipes */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-18 mt-8">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="font-display text-3xl font-bold text-charcoal">
+          <h2 className="font-display md:lg:text-3xl text-xl font-bold text-charcoal">
             Featured Recipes
           </h2>
           <button
             onClick={handleRandomRecipe}
-            className="flex items-center space-x-2 px-4 py-2 bg-sage/10 text-sage rounded-full hover:bg-sage/20 transition-colors font-medium"
+            className="flex items-center space-x-2 px-4 py-2 bg-sage/10 text-sage rounded-full hover:bg-sage/20 transition-colors font-medium md:lg:text-lg text-base"
           >
             <Sparkles size={16} />
             <span>Surprise Me</span>
