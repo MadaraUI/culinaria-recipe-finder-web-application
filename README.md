@@ -169,6 +169,45 @@ npm run preview
 yarn preview
 ```
 
+## API Integration
+
+### TheMealDB API
+
+Culinaria uses [TheMealDB](https://www.themealdb.com) - a free, open recipe database.
+
+**API Documentation:** [https://www.themealdb.com/api.php](https://www.themealdb.com/api.php)
+
+**Endpoints Used:**
+
+- Search by name: `/search.php?s={query}`
+- Search by ingredient: `/filter.php?i={ingredient}`
+- Filter by category: `/filter.php?c={category}`
+- Get recipe details: `/lookup.php?i={id}`
+- Get random recipe: `/random.php`
+- List categories: `/categories.php`
+
+**No API Key Required** - TheMealDB offers a free tier with no authentication needed.
+
+### Data Structure
+
+```typescript
+interface Recipe {
+  idMeal: string;
+  strMeal: string;
+  strMealThumb: string;
+  strCategory?: string;
+  strArea?: string;
+}
+
+interface RecipeDetail extends Recipe {
+  strInstructions: string;
+  strIngredient1-20: string;
+  strMeasure1-20: string;
+  strYoutube?: string;
+  strTags?: string;
+}
+```
+
 ## Challenges & Solutions
 
 ### Challenge 1: API Response Structure
