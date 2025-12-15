@@ -155,7 +155,7 @@ export function HomePage() {
           </h2>
           <button
             onClick={() => navigate("/search")}
-            className="text-terracotta font-medium flex items-center hover:text-terracotta-hover transition-colors"
+            className="text-terracotta font-medium lg:md:text-lg text-sm flex items-center hover:text-terracotta-hover transition-colors"
           >
             View all <ArrowRight size={16} className="ml-1" />
           </button>
@@ -187,7 +187,7 @@ export function HomePage() {
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center">
-                <span className="text-white font-display text-xl font-bold tracking-wide">
+                <span className="text-white font-display md:lg:text-xl text-sm font-bold tracking-wide">
                   {category.strCategory}
                 </span>
               </div>
